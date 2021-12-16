@@ -103,7 +103,8 @@
 			"monorepo",
 			"lockfile",
 			"pnpm",
-			"craco"
+			"craco",
+			"submodules"
 		],
 	}
 }
