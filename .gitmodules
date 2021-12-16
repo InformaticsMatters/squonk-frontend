@@ -1,9 +1,9 @@
 [submodule "apps/data-manager-ui"]
 	path = apps/data-manager-ui
-	url = https://github.com/InformaticsMatters/mini-apps-data-tier-ui
+	url = git@github.com:InformaticsMatters/mini-apps-data-tier-ui.git
 [submodule "libs/react-sci-components"]
 	path = libs/react-sci-components
-	url = https://github.com/InformaticsMatters/react-sci-components
+	url = git@github.com:InformaticsMatters/react-sci-components.git
 [submodule "libs/theme"]
 	path = libs/theme
 	url = git@github.com:InformaticsMatters/squonk-react-mui-theme.git
