@@ -1,0 +1,15 @@
+[submodule "apps/data-manager-ui"]
+	path = apps/data-manager-ui
+	url = https://github.com/InformaticsMatters/mini-apps-data-tier-ui
+[submodule "libs/react-sci-components"]
+	path = libs/react-sci-components
+	url = https://github.com/InformaticsMatters/react-sci-components
+[submodule "libs/theme"]
+	path = libs/theme
+	url = git@github.com:InformaticsMatters/squonk-react-mui-theme.git
+[submodule "apps/pose-viewer"]
+	path = apps/pose-viewer
+	url = git@github.com:InformaticsMatters/mini-apps-pose-viewer.git
+[submodule "libs/eslint-config"]
+	path = libs/eslint-config
+	url = git@github.com:InformaticsMatters/eslint-config-squonk.git

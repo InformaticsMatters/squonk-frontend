@@ -1,0 +1,16 @@
+{
+  "name": "@squonk/squonk-frontend",
+  "version": "0.0.0",
+  "description": "Monorepo for all Squonk UI and JS projects that need to be locally developed together",
+  "scripts": {
+    "dmui:dev": "MONOREPO=true pnpm dev --filter data-manager-ui",
+    "dmui:build": "MONOREPO=true pnpm build --filter data-manager-ui",
+    "pv:dev": "FAST_REFRESH=false pnpm dev --filter pose-viewer",
+    "pv:build": "pnpm build --filter pose-viewer",
+    "rsc:build": "pnpm build --filter react-sci-components",
+    "rsc:watch": "pnpm start --filter react-sci-components",
+    "build": "pnpm build"
+  },
+  "author": "Informatics Matters",
+  "license": "MIT"
+}

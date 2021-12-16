@@ -1,0 +1,109 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "apps/data-manager-ui"
+		},
+		{
+			"path": "apps/pose-viewer"
+		},
+		{
+			"path": "libs/react-sci-components"
+		},
+		{
+			"path": "libs/theme"
+		},
+		{
+			"path": "libs/eslint-config"
+		},
+	],
+	"settings": {
+		"iridium.npm.packageManager": "pnpm",
+		"typescript.tsdk": "data-manager-ui/node_modules/typescript/lib",
+		"cSpell.words": [
+			"Squonk",
+			"vars"
+		],
+		"conventionalCommits.scopes": [
+			"nextjs",
+			"ui/navigation",
+			"ui/projects",
+			"ui/data-table",
+			"ui/attach-datasets",
+			"ui/file-upload",
+			"ui/create-instance",
+			"editor",
+			"auth",
+			"orval",
+			"release",
+			"editor",
+			"auth",
+			"experimentation",
+			"husky",
+			"appearance",
+			"ui/jobs",
+			"jobs",
+			"executions-cards",
+			"file-to-dataset",
+			"tasks",
+			"detach-file",
+			"datetimes",
+			"actions",
+			"deps",
+			"api",
+			"delete-dataset",
+			"edit-project",
+			"executions",
+			"modals",
+			"dataset-new-version",
+			"eslint",
+			"project-state",
+			"download-dataset",
+			"file-selection",
+			"project-path",
+			"base-card",
+			"job-file-inputs",
+			"labels",
+			"dataset-editors",
+			"Authorization",
+			"user",
+			"typescript",
+			"head",
+			"responsive",
+			"apps",
+			"fonts",
+			"dataset-actions",
+			"sort-dataset",
+			"dataset-schema",
+			"theme",
+			"proxy",
+			"mdx",
+			"color-scheme",
+			"context",
+			"cypress",
+			"gitignore",
+			"dataset-details",
+			"add-project",
+			"instance-page",
+			"project-details",
+			"ui/user-settings",
+			"ui/plain-text-viewer",
+			"jsx-transform",
+			"roles",
+			".env",
+			"as-client",
+			"file-picker",
+			"tsup",
+			"husky",
+			"dependencies",
+			"providers",
+			"readme",
+			"monorepo",
+			"lockfile",
+			"pnpm",
+			"craco"
+		],
+	}
+}
