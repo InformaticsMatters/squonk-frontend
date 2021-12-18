@@ -12,5 +12,5 @@
     "build": "pnpm build"
   },
   "author": "Informatics Matters",
-  "license": "MIT"
+  "license": "Apache-2.0"
 }
