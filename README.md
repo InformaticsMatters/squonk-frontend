@@ -13,14 +13,18 @@ This repository uses Git Submodules. [This is a good starting point for the unfa
 
 1. Clone the repo with the `--recurse-submodules` argument to `git clone`. Or clone normally and run `git submodule update --init --recursive`
 
-2. Install and link all packages using `pnpm install`
+2. Set `prefer-frozen-lockfile=false`
+
+3. Install and link all packages using `pnpm install`
+
+4. Set `prefer-frozen-lockfile=true` for faster installs
 
 ## Pushing changes to submodules
 
 Since pnpm creates local links in the `pnpm-lock.yaml`, we need to regenerate this before pushing so that each submodule can be a singleton.
 
-1. Remove modified `pnpm-lock.yaml` files
-2. Set `link-workspace-packages` in `.npmrc` to `false`
-3. Re-run `pnpm install`
+1. Set `prefer-frozen-lockfile=false` in `.npmrc`
+2. Set `link-workspace-packages=false` in `.npmrc`
+3. Re-run `pnpm i`
 
-Checking the lockfile should not show any links between packages. The updated submodules should be ready to push changes once the lockfile is committed.
+Check the lockfile, ensuring it should not show any links between packages. The updated submodules should be ready to push changes once the lockfile is committed.
