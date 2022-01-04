@@ -2,7 +2,14 @@
   "name": "@squonk/squonk-frontend",
   "version": "0.0.0",
   "description": "Monorepo for all Squonk UI and JS projects that need to be locally developed together",
+  "author": "Informatics Matters",
+  "license": "Apache-2.0",
   "scripts": {
+    "c:link": "pnpm c set link-workspace-packages=true prefer-frozen-lockfile=false -L project",
+    "c:remote": "pnpm c set link-workspace-packages=false prefer-frozen-lockfile=false -L project",
+    "c:reset": "pnpm c delete link-workspace-packages prefer-frozen-lockfile -L project",
+    "i:link": "pnpm c:link && pnpm i && pnpm c:reset",
+    "i:remote": "pnpm c:remote && pnpm i && pnpm c:reset",
     "dmui:dev": "MONOREPO=true pnpm dev --filter data-manager-ui",
     "dmui:build": "MONOREPO=true pnpm build --filter data-manager-ui",
     "pv:dev": "FAST_REFRESH=false pnpm dev --filter pose-viewer",
@@ -10,7 +17,5 @@
     "rsc:build": "pnpm build --filter react-sci-components",
     "rsc:watch": "pnpm start --filter react-sci-components",
     "build": "pnpm build"
-  },
-  "author": "Informatics Matters",
-  "license": "Apache-2.0"
+  }
 }
