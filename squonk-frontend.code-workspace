@@ -23,6 +23,8 @@
 		"iridium.npm.packageManager": "pnpm",
 		"typescript.tsdk": "data-manager-ui/node_modules/typescript/lib",
 		"cSpell.words": [
+			"Dropzone",
+			"Formik",
 			"Squonk",
 			"vars"
 		],
@@ -52,7 +54,6 @@
 			"mdx",
 			"color-scheme",
 			"context",
-			"cypress",
 			"gitignore",
 			"proxy",
 			"jsx-transform",
@@ -102,7 +103,19 @@
 			"results-io",
 			"jobs-logs",
 			"sentry",
-			"scopes"
+			"scopes",
+			"playwright",
+			"babel",
+			"mui",
+			"dynamic",
+			"vercel",
+			"dataset-from-unmanaged-file",
+			"footer",
+			"create-project",
+			"delete-modal",
+			"project-bootstrap",
+			"navigation",
+			"docker"
 		],
 	}
 }
