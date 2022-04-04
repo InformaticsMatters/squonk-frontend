@@ -10,8 +10,6 @@
 
 # testing
 /coverage
-cypress/screenshots
-cypress/videos
 
 # next.js
 /.next/
@@ -20,6 +18,7 @@ cypress/videos
 # production
 /build
 
+/libs/data-manager-client
 # misc
 .DS_Store
 *.pem
