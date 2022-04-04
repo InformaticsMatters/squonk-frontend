@@ -12,6 +12,7 @@
     "i:remote": "pnpm c:remote && pnpm i && pnpm c:reset",
     "dmui:dev": "MONOREPO=true pnpm dev --filter data-manager-ui",
     "dmui:build": "MONOREPO=true pnpm build --filter data-manager-ui",
+    "theme:build": "MONOREPO=true pnpm build --filter mui-theme",
     "pv:dev": "FAST_REFRESH=false pnpm dev --filter pose-viewer",
     "pv:build": "pnpm build --filter pose-viewer",
     "rsc:build": "pnpm build --filter react-sci-components",
