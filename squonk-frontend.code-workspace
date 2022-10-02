@@ -115,7 +115,27 @@
 			"delete-modal",
 			"project-bootstrap",
 			"navigation",
-			"docker"
+			"docker",
+			"renovate",
+			"project-selection",
+			"lint-staged",
+			"settings",
+			"dataset-storage-table",
+			"result-timeline",
+			"create-unit",
+			"jotai",
+			"home-page",
+			"cookie",
+			"share-project",
+			"viewers",
+			"polling",
+			"archived-instances",
+			"local-storage",
+			"products",
+			"delete-unit",
+			"edit-unit"
 		],
+		"javascript.preferences.importModuleSpecifier": "relative",
+		"typescript.preferences.importModuleSpecifier": "relative",
 	}
 }
