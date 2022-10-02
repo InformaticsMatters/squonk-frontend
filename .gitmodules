@@ -1,6 +1,6 @@
 [submodule "apps/data-manager-ui"]
 	path = apps/data-manager-ui
-	url = git@github.com:InformaticsMatters/mini-apps-data-tier-ui.git
+	url = git@github.com:InformaticsMatters/squonk2-data-manager-ui.git
 [submodule "libs/react-sci-components"]
 	path = libs/react-sci-components
 	url = git@github.com:InformaticsMatters/react-sci-components.git
