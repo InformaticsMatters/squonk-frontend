@@ -10,13 +10,13 @@
     "c:reset": "pnpm c delete link-workspace-packages prefer-frozen-lockfile -L project",
     "i:link": "pnpm c:link && pnpm i && pnpm c:reset",
     "i:remote": "pnpm c:remote && pnpm i && pnpm c:reset",
-    "dmui:dev": "MONOREPO=true pnpm dev --filter data-manager-ui",
-    "dmui:build": "MONOREPO=true pnpm build --filter data-manager-ui",
-    "theme:build": "MONOREPO=true pnpm build --filter mui-theme",
-    "pv:dev": "FAST_REFRESH=false pnpm dev --filter pose-viewer",
-    "pv:build": "pnpm build --filter pose-viewer",
-    "rsc:build": "pnpm build --filter react-sci-components",
-    "rsc:watch": "pnpm start --filter react-sci-components",
+    "dmui:dev": "MONOREPO=true pnpm --filter data-manager-ui dev",
+    "dmui:build": "MONOREPO=true pnpm --filter data-manager-ui build",
+    "theme:build": "MONOREPO=true pnpm --filter mui-theme build",
+    "pv:dev": "FAST_REFRESH=false pnpm --filter pose-viewer dev",
+    "pv:build": "pnpm --filter pose-viewer build",
+    "rsc:build": "pnpm --filter react-sci-components build",
+    "rsc:watch": "pnpm --filter react-sci-components start",
     "build": "pnpm build"
   }
 }
