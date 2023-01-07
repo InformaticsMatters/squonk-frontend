@@ -133,9 +133,16 @@
 			"local-storage",
 			"products",
 			"delete-unit",
-			"edit-unit"
+			"edit-unit",
+			"invoice",
+			"charges-page",
+			"delete-product",
+			"data-table",
+			"create-dataset-sub",
+			"nodejs"
 		],
 		"javascript.preferences.importModuleSpecifier": "relative",
 		"typescript.preferences.importModuleSpecifier": "relative",
+		"task.allowAutomaticTasks": "on",
 	}
 }
