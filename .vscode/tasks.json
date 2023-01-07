@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "i:remote",
+			"problemMatcher": [],
+			"label": "pnpm: i:remote",
+			"detail": "pnpm c:remote && pnpm i && pnpm c:reset",
+			"presentation": {
+				"close": true
+			}
+		}
+	]
+}
