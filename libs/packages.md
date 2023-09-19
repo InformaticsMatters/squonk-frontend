@@ -5,3 +5,5 @@
 2. [React Sci Components](https://github.com/InformaticsMatters/react-sci-components)
 
 3. [Squonk's MUI Theme](https://github.com/InformaticsMatters/squonk-react-mui-theme)
+
+4. [Squonk SDF Parser](https://github.com/InformaticsMatters/squonk-react-mui-theme)

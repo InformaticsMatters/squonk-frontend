@@ -18,9 +18,11 @@
 		{
 			"path": "libs/eslint-config"
 		},
+		{
+			"path": "libs/sdf-parser"
+		},
 	],
 	"settings": {
-		"iridium.npm.packageManager": "pnpm",
 		"typescript.tsdk": "data-manager-ui/node_modules/typescript/lib",
 		"cSpell.words": [
 			"Dropzone",
@@ -139,10 +141,23 @@
 			"delete-product",
 			"data-table",
 			"create-dataset-sub",
-			"nodejs"
+			"nodejs",
+			"sketcher",
+			"config-page",
+			"observers",
+			"run-job",
+			"delete-project",
+			"devcontainer",
+			"dataset-sub-table",
+			"docs",
+			"file-download",
+			"sdf-parser"
 		],
 		"javascript.preferences.importModuleSpecifier": "relative",
 		"typescript.preferences.importModuleSpecifier": "relative",
 		"task.allowAutomaticTasks": "on",
+		"githubPullRequests.ignoredPullRequestBranches": [
+			"master"
+		],
 	}
 }
