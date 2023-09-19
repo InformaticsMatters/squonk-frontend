@@ -10,6 +10,16 @@
 			"presentation": {
 				"close": true
 			}
+		},
+		{
+			"type": "npm",
+			"script": "i:link",
+			"problemMatcher": [],
+			"label": "pnpm: i:link",
+			"detail": "pnpm c:link && pnpm i && pnpm c:reset",
+			"presentation": {
+				"close": true
+			}
 		}
 	]
 }
