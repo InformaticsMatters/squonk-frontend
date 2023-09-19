@@ -13,6 +13,3 @@
 [submodule "libs/eslint-config"]
 	path = libs/eslint-config
 	url = git@github.com:InformaticsMatters/eslint-config-squonk.git
-[submodule "libs/sdf-parser"]
-	path = libs/sdf-parser
-	url = git@github.com:InformaticsMatters/sdf-parser.git
