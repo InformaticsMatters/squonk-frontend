@@ -27,6 +27,7 @@
 		"cSpell.words": [
 			"Dropzone",
 			"Formik",
+			"orval",
 			"Squonk",
 			"vars"
 		],
@@ -151,7 +152,12 @@
 			"dataset-sub-table",
 			"docs",
 			"file-download",
-			"sdf-parser"
+			"sdf-parser",
+			"exclude-properties",
+			"sdf",
+			"project-stats",
+			"unit-user-usage",
+			"move-file-mutation"
 		],
 		"javascript.preferences.importModuleSpecifier": "relative",
 		"typescript.preferences.importModuleSpecifier": "relative",
