@@ -16,3 +16,6 @@
 [submodule "libs/sdf-parser"]
 	path = libs/sdf-parser
 	url = git@github.com:InformaticsMatters/sdf-parser.git
+[submodule "tools/client-generator"]
+	path = tools/client-generator
+	url = git@github.com:InformaticsMatters/squonk2-openapi-js-client-generator.git

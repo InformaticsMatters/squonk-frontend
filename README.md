@@ -17,6 +17,29 @@ This repository uses Git Submodules. [This is a good starting point for the unfa
 
 2. Install and link _all packages_ using `pnpm i:link` from the monorepo root
 
+## Local OpenAPI Clients
+
+Generated OpenAPI client packages can be built locally for testing API spec changes that are not yet published to npm (packages are published by CI). The generated packages and local OpenAPI specs are intentionally ignored by Git.
+
+To generate both local clients and link them into workspace consumers:
+
+```bash
+pnpm generate:clients:link
+```
+
+To generate one client:
+
+```bash
+pnpm generate:client:data-manager
+pnpm generate:client:account-server
+```
+
+The generator reads the ignored OpenAPI specs from `openapi/`, builds each client in `.client-build/`, and replaces the corresponding ignored package in `libs/` with only `package.json`, `src/`, and `dist/`.
+
+After generating without `:link`, run `pnpm i:link` from the monorepo root if apps should resolve the local generated clients instead of the published npm packages.
+
+`data-manager-ui` installs generated OpenAPI clients as injected pnpm dependencies so their React/React Query peers resolve from the app. Because injected dependencies are copied into the app's virtual store, regenerate and relink clients with `pnpm generate:clients:link` after changing OpenAPI specs. Running only `pnpm generate:client:*` can leave the app using a stale injected copy until `pnpm i:link` is run from the monorepo root.
+
 ## Pushing changes to submodules
 
 `pnpm` creates local links in the `pnpm-lock.yaml` which is very useful in development but we don't want these relative urls in the pushed commits. We need to regenerate the `pnpm-lock.yaml`s before pushing so that each submodule can be a singleton.

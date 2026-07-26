@@ -1,0 +1,28 @@
+{
+  "data-manager": {
+    "packageName": "@squonk/data-manager-client",
+    "version": "5.4.0",
+    "author": "Informatics Matters",
+    "description": "TypeScript client for the Squonk Data Manager API. Generated from the OpenAPI spec with orval.",
+    "repository": "https://github.com/InformaticsMatters/squonk-frontend",
+    "openapi": "openapi/data-manager.yaml",
+    "output": "libs/data-manager-client",
+    "devDependencies": {
+      "@tanstack/react-query": "5.100.11",
+      "axios": "1.16.1"
+    }
+  },
+  "account-server": {
+    "packageName": "@squonk/account-server-client",
+    "version": "4.4.0",
+    "author": "Informatics Matters",
+    "description": "TypeScript client for the Squonk Account Server API. Generated from the OpenAPI spec with orval.",
+    "repository": "https://github.com/InformaticsMatters/squonk-frontend",
+    "openapi": "openapi/account-server.yaml",
+    "output": "libs/account-server-client",
+    "devDependencies": {
+      "@tanstack/react-query": "5.100.11",
+      "axios": "1.16.1"
+    }
+  }
+}
