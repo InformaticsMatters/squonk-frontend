@@ -7,9 +7,6 @@
 			"path": "apps/data-manager-ui"
 		},
 		{
-			"path": "apps/pose-viewer"
-		},
-		{
 			"path": "libs/react-sci-components"
 		},
 		{
