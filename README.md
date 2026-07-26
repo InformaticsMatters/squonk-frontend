@@ -31,6 +31,11 @@ Note that the `HEAD` of each submodule is not automatically updated when changes
 
 Use `git submodule add <url> <path>` to add a submodule to the registry. Then commit the `.gitmodules` file and the repo ref.
 
-## `MONOREPO` Environment Variable
+## Monorepo vs Polyrepo Mode
 
-Some root npm scripts will set an environment variable `MONOREPO` which can be used to conditionally do things depending on whether the package is in the monorepo or not (also useful for ensuring the package works outside of the monorepo which it should).
+The submodule and pnpm configuration allow development with both a monorepo repo (locally linked pages) and a polyrepo (packages from the registry). These can be toggled with the `--link-workspace-packages` flag to `pnpm`.
+
+- `pnpm i` install in _polyrepo mode_
+- `pnpm i --link-workspace-packages` install in _monorepo mode_
+
+Warning: in monorepo mode packages will only be linked if the **versions match**. I.e the dependency version in the consumer package must match the version field of the library.

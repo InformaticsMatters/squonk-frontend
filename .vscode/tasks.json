@@ -3,20 +3,20 @@
 	"tasks": [
 		{
 			"type": "npm",
-			"script": "i:remote",
+			"script": "install",
 			"problemMatcher": [],
-			"label": "pnpm: i:remote",
-			"detail": "pnpm c:remote && pnpm i && pnpm c:reset",
+			"label": "install",
+			"detail": "Install all dependencies for all projects with local packages from the registry",
 			"presentation": {
 				"close": true
 			}
 		},
 		{
-			"type": "npm",
-			"script": "i:link",
+			"label": "install (link)",
+			"type": "shell",
+			"command": "pnpm i --link-workspace-packages",
 			"problemMatcher": [],
-			"label": "pnpm: i:link",
-			"detail": "pnpm c:link && pnpm i && pnpm c:reset",
+			"detail": "Install all dependencies for all projects with local packages linked locally",
 			"presentation": {
 				"close": true
 			}

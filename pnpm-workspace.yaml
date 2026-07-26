@@ -1,6 +1,7 @@
 packages:
-- "apps/*"
-- "libs/*"
-minimumReleaseAge: 2880 # in minutes (2 days)
+- "apps/**"
+- "libs/**"
+preferFrozenLockfile: false
+sharedWorkspaceLockfile: false
 minimumReleaseAgeExclude:
 - '@squonk/*'

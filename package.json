@@ -1,23 +1,13 @@
 {
   "name": "@squonk/squonk-frontend",
   "version": "0.0.0",
-  "description": "Monorepo for all Squonk UI and JS projects that need to be locally developed together",
+  "description": "Monorepo/Polyrepo for all Squonk UI and JS projects that need to be locally developed together",
   "author": "Informatics Matters",
   "license": "Apache-2.0",
   "scripts": {
-    "c:link": "pnpm c set link-workspace-packages=true && pnpm c set prefer-frozen-lockfile=false",
-    "c:remote": "pnpm c set link-workspace-packages=false && pnpm c set prefer-frozen-lockfile=false",
-    "c:reset": "pnpm c delete link-workspace-packages && pnpm c delete prefer-frozen-lockfile",
-    "i:link": "pnpm c set MONOREPO=true && pnpm c:link && pnpm i && pnpm c:reset",
-    "i:remote": "pnpm c delete MONOREPO && pnpm c:remote && pnpm i && pnpm c:reset",
-    "c:monorepo": "pnpm c get MONOREPO",
-    "dmui:dev": "pnpm --filter data-manager-ui dev",
-    "dmui:build": "pnpm --filter data-manager-ui build",
-    "theme:build": "pnpm --filter mui-theme build",
-    "pv:dev": "FAST_REFRESH=false pnpm --filter pose-viewer dev",
-    "pv:build": "pnpm --filter pose-viewer build",
-    "rsc:build": "pnpm --filter react-sci-components build",
-    "rsc:watch": "pnpm --filter react-sci-components start",
-    "build": "pnpm build"
+    "generate:client:account-server": "node tools/generate-client.mjs account-server",
+    "generate:client:data-manager": "node tools/generate-client.mjs data-manager",
+    "generate:clients": "node tools/generate-client.mjs all",
+    "generate:clients:link": "pnpm generate:clients && pnpm i --link-workspace-packages"
   }
 }

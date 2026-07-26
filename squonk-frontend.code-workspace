@@ -157,7 +157,8 @@
 			"sdf",
 			"project-stats",
 			"unit-user-usage",
-			"move-file-mutation"
+			"move-file-mutation",
+			"motd"
 		],
 		"javascript.preferences.importModuleSpecifier": "relative",
 		"typescript.preferences.importModuleSpecifier": "relative",
