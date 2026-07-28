@@ -3,11 +3,5 @@
   "version": "0.0.0",
   "description": "Monorepo/Polyrepo for all Squonk UI and JS projects that need to be locally developed together",
   "author": "Informatics Matters",
-  "license": "Apache-2.0",
-  "scripts": {
-    "generate:client:account-server": "node tools/generate-client.mjs account-server",
-    "generate:client:data-manager": "node tools/generate-client.mjs data-manager",
-    "generate:clients": "node tools/generate-client.mjs all",
-    "generate:clients:link": "pnpm generate:clients && pnpm i --link-workspace-packages"
-  }
+  "license": "Apache-2.0"
 }

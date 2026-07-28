@@ -18,14 +18,6 @@
 # production
 /build
 
-# generated local OpenAPI clients and inputs
-/libs/account-server-client
-/libs/data-manager-client
-/.client-build
-/openapi/*.json
-/openapi/*.yaml
-/openapi/*.yml
-
 # misc
 .DS_Store
 *.pem
